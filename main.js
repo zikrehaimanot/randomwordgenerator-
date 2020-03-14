@@ -31,7 +31,7 @@ activate.addEventListener('click',()=>{
         .then(res => res.json())
         .then(response =>{
           // console.log(response)
-          // console.log(response.data[0].images.original.url)
+           console.log(response.data[0].images.original.url)
           let data = response.data[0]
           document.querySelector('img').src = data.images.original.url
 
